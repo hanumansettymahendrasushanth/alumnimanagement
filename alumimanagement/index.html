@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluminum Management System</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <h1>Aluminum Management System</h1>
+
+        
+        <h2>Inventory</h2>
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Aluminum Sheet</td>
+                <td>100</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>Aluminum Rod</td>
+                <td>50</td>
+                <td>$30.00</td>
+            </tr>
+            
+        </table>
+
+        
+        <h2>Orders</h2>
+        <table>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>sushanth</td>
+                <td>Aluminum </td>
+                <td>5</td>
+                <td>RS:250.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>sumanth</td>
+                <td>magnite</td>
+                <td>2</td>
+                <td>RS:60.00</td>
+            </tr>
+            
+        </table>
+
+        
+        <h2>Add New Order</h2>
+        <button onclick="showOrderForm()">Add Order</button>
+
+        
+        <div id="orderForm" style="display: none;">
+            <h3>New Order</h3>
+            <form>
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required><br><br>
+
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required><br><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required><br><br>
+
+                <button type="button" onclick="addOrder()">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js">
+            </script>
+</body>
+</html>
